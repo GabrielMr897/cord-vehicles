@@ -1,11 +1,15 @@
-import './App.css'
-import { AuthProvider } from './context'
+import { BrowserRouter } from "react-router-dom";
+import './App.css';
+import { AuthProvider } from './context';
+import Router from './router/Router';
 
 function App() {
 
   return (
     <AuthProvider>
-      <div>oi</div>
+      <BrowserRouter>
+        <Router/>                
+      </BrowserRouter>
     </AuthProvider>
   )
 }
